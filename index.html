@@ -18,7 +18,7 @@
   <body>
     <header class="container">
       <!-- Nav start -->
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container">
           <div class="logo">
             <a class="navbar-brand" href="#"
@@ -43,13 +43,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact Us</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -156,7 +156,7 @@
     </header>
 
     <!-- Main start -->
-    <main class="container">
+    <main class="container-fluid bg-light">
       <section class="category container">
         <div class="row g-4 g-md-4">
           <!-- watch card -->
@@ -215,7 +215,7 @@
       </section>
       <!-- shoes card section start -->
 
-      <section class="shoes-card my-5 container">
+      <section id="shoes" class="shoes-card my-5 container">
         <h2>Shoes</h2>
         <div
           class="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-3 g-4"
@@ -293,7 +293,7 @@
       <!-- Shoes card section end -->
 
       <!-- Bag card section start -->
-      <section class="bag-card my-5 container">
+      <section id="backpack" class="bag-card my-5 container">
         <h2>Backpack</h2>
         <div
           class="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-3 g-4"
@@ -370,6 +370,36 @@
       <!-- Bag card section end -->
     </main>
     <!-- main end  -->
+
+    <section
+      id="subscribe"
+      class="container h-100 py-5"
+      style="background-color: rgba(255, 192, 203, 0.546)"
+    >
+      <h2 class="text-center">LET'S STAY IN TOUCH</h2>
+      <p class="text-center">Get updates on sales specials and more</p>
+      <div class="input-group w-50 m-auto">
+        <input
+          type="email"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+        /><span
+          class="input-group-text bg-danger text-white"
+          id="inputGroup-sizing-lg"
+          >Send</span
+        >
+      </div>
+    </section>
+
+    <footer class="text-center my-5 my-lg-5 my-md-5">
+      <p>
+        <small
+          >&copy;2023. Panda Commerce. All rights reserved. Sofia,
+          Bulgaria</small
+        >
+      </p>
+    </footer>
 
     <!-- js cdn bootstrap -->
     <script
